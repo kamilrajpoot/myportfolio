@@ -45,9 +45,9 @@ const ScrollIndicator = () => {
           />
         </defs>
 
-        <text className="font-mono-label text-[10px] fill-ink">
+        <text className="font-mono-label text-[11px] fill-ink">
           <textPath href="#circlePath">
-            SCROLL TO EXPLORE • SCROLL TO EXPLORE •
+            SCROLL TO BEGIN • YOUR JOURNEY STARTS HERE •
           </textPath>
         </text>
       </svg>
@@ -59,3 +59,4 @@ const ScrollIndicator = () => {
 };
 
 export default ScrollIndicator;
+
