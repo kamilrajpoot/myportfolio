@@ -8,9 +8,12 @@ const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const contactRoutes = require("./routes/contactRoutes");
 const serviceRoutes = require("./routes/serviceRoutes");
 const projectRoutes = require("./routes/projectRoutes");
-const certificationRoutes = require("./routes/certificationRoutes"); // Added
+const certificationRoutes = require("./routes/certificationRoutes"); // Ensure this file exists!
 
 const app = express();
+
+// FIX FOR RENDER: Trust the proxy for rate limiting
+app.set("trust proxy", 1);
 
 // Security & parsing middleware
 app.use(helmet());
@@ -50,7 +53,7 @@ app.get("/api/health", (req, res) => {
 app.use("/api/contact", contactRoutes);
 app.use("/api/services", serviceRoutes);
 app.use("/api/projects", projectRoutes);
-app.use("/api/certifications", certificationRoutes); // Added
+app.use("/api/certifications", certificationRoutes); // Ensure this matches the file name
 
 // Error handling (must come after routes)
 app.use(notFound);
