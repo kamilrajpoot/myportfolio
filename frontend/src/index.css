@@ -94,7 +94,6 @@ textarea {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
@@ -116,7 +115,6 @@ textarea {
 }
 
 @media (max-width: 767px) {
-
   html,
   body,
   #root {
