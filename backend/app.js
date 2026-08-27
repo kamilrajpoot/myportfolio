@@ -12,6 +12,12 @@ const certificationRoutes = require("./routes/certificationRoutes"); // Ensure t
 
 const app = express();
 
+const allowedOrigins = [
+  "https://muhammadkamiltoor.vercel.app",
+  "https://mkamil.vercel.app",
+  "http://localhost:5173",
+];
+
 // FIX FOR RENDER: Trust the proxy for rate limiting
 app.set("trust proxy", 1);
 
@@ -19,7 +25,13 @@ app.set("trust proxy", 1);
 app.use(helmet());
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   }),
 );
@@ -41,12 +53,10 @@ app.use("/api", apiLimiter);
 
 // Health check
 app.get("/api/health", (req, res) => {
-  res
-    .status(200)
-    .json({
-      success: true,
-      message: "Muhammad Kamil Toor Portfolio API is running",
-    });
+  res.status(200).json({
+    success: true,
+    message: "Muhammad Kamil Toor Portfolio API is running",
+  });
 });
 
 // Routes
