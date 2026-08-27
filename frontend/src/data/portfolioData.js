@@ -66,10 +66,6 @@ export const badges = [
   { name: "MERN Stack", icon: "Code" },
   { name: "RAG Systems", icon: "Database" },
   { name: "Automation", icon: "Zap" },
-  { name: "AI Engineer", icon: "Brain" },
-  { name: "MERN Stack", icon: "Code" },
-  { name: "RAG Systems", icon: "Database" },
-  { name: "Automation", icon: "Zap" },
 ];
 
 export const services = [
