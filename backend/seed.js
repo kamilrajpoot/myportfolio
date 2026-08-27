@@ -19,14 +19,14 @@ const certifications = [
     issuer: "DataCamp",
     date: "August 2026",
     idCode: "AIEDA0013178735517",
-    file: "/assets/certs/ai-engineer-associate.pdf",
+    file: "/public/certs/ai-engineer-associate.pdf",
   },
   {
     title: "AI Fundamentals",
     issuer: "DataCamp",
     date: "August 2026",
     idCode: "AIF0024169670761",
-    file: "/assets/certs/ai-fundamentals.pdf",
+    file: "/public/certs/ai-fundamentals.pdf",
   },
   {
     title: "N8N Masterclass for AI Chatbots",
