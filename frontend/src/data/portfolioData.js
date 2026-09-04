@@ -9,7 +9,7 @@ export const profile = {
   degree: "Bachelor of Science in Artificial Intelligence",
   educationPeriod: "October 2023 – June 2027",
   linkedin: "https://www.linkedin.com/in/kamiltoor/",
-  github: "https://github.com/",
+  github: "https://github.com/kamilrajpoot",
 };
 
 export const skills = [
@@ -25,7 +25,7 @@ export const skills = [
   "Computer Vision",
   "REST APIs",
   "JWT Auth",
-  "Git",
+  "Git/GitHub",
 ];
 
 export const certifications = [
@@ -46,18 +46,34 @@ export const certifications = [
     file: "/public/certs/ai-fundamentals.pdf",
   },
   {
+    id: "PDA0017398601907",
+    title: "Python Data Associate",
+    issuer: "DataCamp",
+    date: "September 2026",
+    idCode: "PDA0017398601907",
+    file: "/public/certs/PDA0017398601907.pdf",
+  },
+  {
+    id: "10675827_11005757_1788200789254",
+    title: "Full Stack Development",
+    issuer: "SimpliLearn",
+    date: "September 2026",
+    idCode: "10675827_11005757_1788200789254",
+    file: "/public/certs/10675827_11005757_1788200789254.pdf",
+  },
+  {
     id: "n8n-masterclass",
     title: "N8N Masterclass for AI Chatbots",
     issuer: "DataCrumbs",
-    date: "2025",
-    file: "#",
+    date: "January 2026",
+    file: "/public/certs/MUHAMMAD KAMIL TOOR_N8n_Chatbot_Lab_certificate.pdf",
   },
   {
     id: "ai-voice-chatbot",
     title: "Building AI Voice Chatbot Masterclass",
     issuer: "DataCrumbs",
-    date: "2025",
-    file: "#",
+    date: "October 2025",
+    file: "/public/certs/MUHAMMAD KAMIL TOOR_Building_AI_Voice_Agent_Masterclass_certificate.pdf",
   },
 ];
 
@@ -206,6 +222,10 @@ export const projects = [
       "Cloudinary image uploads",
       "Cash on delivery and Stripe integration",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "everlion-international",
@@ -226,6 +246,10 @@ export const projects = [
       "Nodemailer contact system",
       "Inquiry-focused information architecture",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "habitron",
@@ -234,18 +258,30 @@ export const projects = [
     year: "SELECTED WORK",
     category: "Web Development",
     description:
-      "React 19 and Vite habit tracker with streaks, analytics, and JSON import/export.",
+      "Full-stack MERN habit tracker with JWT auth, custom scheduling, and a visual analytics dashboard including a GitHub-style completion heatmap.",
     detail:
-      "A focused productivity product that turns daily habits into visible streaks and useful progress analytics.",
-    tags: ["React 19", "Vite", "Analytics"],
+      "A full-stack productivity product (React 19 + Vite frontend, Express/TypeScript + MongoDB backend) that turns daily habits into trackable streaks and visual analytics. Supports boolean, numeric, duration, count, and avoidance-type habits with flexible scheduling (daily, weekdays-only, times-per-week, every-N-days, monthly, or custom). Backend features JWT access/refresh token auth, bcrypt password hashing, Zod-ready schema validation, and a REST API for habits, completions, and analytics.",
+    tags: [
+      "React 19",
+      "Vite",
+      "Express",
+      "TypeScript",
+      "MongoDB",
+      "JWT Auth",
+      "Analytics",
+    ],
     featured: true,
     serviceSlugs: ["web-development", "ai-product-development"],
     bullets: [
-      "Habit creation and tracking",
-      "Streak calculations",
-      "Analytics dashboard",
-      "JSON import and export",
+      "JWT-based authentication with access + refresh tokens",
+      "Custom habit scheduling: daily, weekdays-only, times-per-week, every-N-days, monthly",
+      "Analytics dashboard with heatmap, weekly trends, and category breakdowns",
+      "REST API built with Express, TypeScript, and MongoDB/Mongoose",
     ],
+    liveUrl: null,
+    githubUrl: "https://github.com/kamilrajpoot/Habitron",
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "e-commerce-rag-chatbot",
@@ -266,6 +302,10 @@ export const projects = [
       "Sentence Transformers embeddings",
       "Gradio interface",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "voice-chatbot",
@@ -286,6 +326,10 @@ export const projects = [
       "Customer support automation",
       "AI product workflow design",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "ai-chatbot-rasa-langchain",
@@ -306,6 +350,10 @@ export const projects = [
       "Rasa integration",
       "LangChain integration",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "movie-rag-system",
@@ -326,6 +374,10 @@ export const projects = [
       "Conversational interface",
       "Prompt and response refinement",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "handwritten-digit-recognizer",
@@ -346,6 +398,10 @@ export const projects = [
       "Classification evaluation",
       "97% stated test accuracy",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "traffic-sign-recognition",
@@ -365,6 +421,10 @@ export const projects = [
       "Traffic-sign categories",
       "Real-time recognition direction",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "emotion-sense-ai",
@@ -384,6 +444,10 @@ export const projects = [
       "Deep-learning workflow",
       "Real-time recognition direction",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "student-score-prediction",
@@ -404,6 +468,10 @@ export const projects = [
       "Academic performance forecasting",
       "85% stated prediction confidence",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl: null,
+    images: null,
   },
   {
     slug: "effihyvit-v2",
@@ -412,18 +480,25 @@ export const projects = [
     year: "RESEARCH",
     category: "Research",
     description:
-      "Comparative study of CNN, ViT, and hybrid architectures for pneumonia detection on chest X-rays.",
+      "Evaluated 6 vision architectures (3 CNNs, 2 ViTs, and a novel CNN-Transformer hybrid, EffiHyViT-v2) for pneumonia detection.",
     detail:
-      "Co-authored research comparing convolutional, transformer, and hybrid architectures for medical-image classification.",
-    tags: ["CNN", "ViT", "Medical AI"],
+      "Authored IEEE-format paper benchmarking ResNet50, DenseNet121, EfficientNet-B0, ViT-Base/16, and Swin-Base against a novel hybrid architecture (EffiHyViT-v2) featuring a depthwise-separable convolutional stem, CBAM attention, dynamic positional encoding, local-global fusion transformer blocks, and an expert-token classification head. Evaluated on a 6,046-image held-out RSNA test set with full classification reports, confusion matrices, and Grad-CAM analysis. Includes a transparent, literature-grounded discussion of why the hybrid underperformed simpler pretrained backbones and concrete directions (self-supervised pretraining, staged fine-tuning) for closing the gap.",
+    tags: ["CNN", "Vision Transformer", "Hybrid Architecture", "RSNA Dataset"],
     featured: false,
     serviceSlugs: ["computer-vision-ml"],
     bullets: [
-      "CNN benchmarking",
-      "Vision Transformer comparison",
-      "Hybrid architecture analysis",
-      "Chest X-ray pneumonia detection",
+      "Benchmarked ResNet50, DenseNet121, EfficientNet-B0, ViT-Base/16, and Swin-Base under one matched training protocol",
+      "Designed EffiHyViT-v2: CBAM attention, dynamic positional encoding generator, local-global fusion transformer",
+      "EfficientNet-B0 top performer at 86% accuracy / 0.86 weighted F1 on 6,046-image RSNA test set",
+      "Confusion matrix, ROC, and Grad-CAM analysis across all six models",
+      "Transparent root-cause analysis of hybrid model's recall gap vs. pretrained baselines",
     ],
+    liveUrl: null,
+    githubUrl: null,
+    pdfUrl:
+      "/projects/A Comparative Study of CNN, Vision Transformer, and Hybrid Deep Learning Architectures for Pneumonia Detection and Localization Using Chest X-Rays, with a Proposed EffiHyViT-v2 Model.pdf",
+
+    images: null,
   },
 ];
 
